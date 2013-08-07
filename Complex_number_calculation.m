@@ -19,3 +19,6 @@ axis([0, 6, 0, 6])
 text(3.5, 2.3, 'z1')
 text(5, 4.5, 'z2')
 text(2.5, 3.5, 'z12')
+
+xlabel('real')
+ylabel('image')
