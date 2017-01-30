@@ -1,7 +1,10 @@
-t = 0:pi/50:4*pi;           % 自变量t的取值范围
-y = exp(-t/3).*sin(3*t);    % 计算与自变量相应的y数组。 注意：乘法符号前面的小黑点
+clear
+clc
 
-plot(t, y, '-r', 'LineWidth', 2)    % 绘制衰减振荡曲线
+t = 0:pi/50:4*pi;       % define the range of independent variable t
+y = exp(-t/3).*sin(3*t);    % compute the dependant variable y, corresponding to x.  CAUTION : the dot . operator
+
+plot(t, y, '-r', 'LineWidth', 2)    % plot the curve
 axis([0, 4*pi, -1, 1])
 xlabel('t')
 ylabel('y')
