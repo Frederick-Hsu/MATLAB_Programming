@@ -2,3 +2,5 @@
 # The below file types and directories will be ignored the tracking by git :
 
 *.m~
+*.mat
+.DS_Store

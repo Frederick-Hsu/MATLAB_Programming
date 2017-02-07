@@ -1,4 +1,5 @@
-% 复数矩阵的计算
+clear
+clc
 
 AR = [1, 3;
       2, 4];
@@ -11,7 +12,6 @@ A = AR - AI*i
 A_real = real(A)
 A_image = imag(A)
 
-% 求复数数组中各元素的模和幅角 －－－ 循环法
 for m = 1:2
     for n = 1:2
         Am1(m, n) = abs(A(m, n));
@@ -22,7 +22,6 @@ end
 Am1
 Aa1
 
-% 求复数数组中各元素的模和幅角 －－－ 直接法
 Am2 = abs(A)
 Aa2 = angle(A) * 180 / pi
 Am2
