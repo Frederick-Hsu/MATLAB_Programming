@@ -26,3 +26,6 @@ imwrite(cat_img, 'my_cat_q0.jpg',  'quality',  0)
 img_struct = imfinfo('cat.jpg')     % Display the detail information about an image
 % Calculate the compression ratio
 compression_ratio = (img_struct.Width * img_struct.Height * img_struct.BitDepth) / (8 * img_struct.FileSize)
+
+% Save the image 
+print -f2 -dtiff -r300 high_res_cat
